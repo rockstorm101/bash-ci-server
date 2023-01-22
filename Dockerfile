@@ -15,12 +15,20 @@ ENV BASH_CI_DIR=$BASH_CI_ROOT_DIR/scripts \
     LOGS_DIR=$BASH_CI_ROOT_DIR/logs
 RUN set -ex; \
     mkdir -p $BASH_CI_DIR; \
-    cd $BASH_CI_DIR; \
-    git clone https://github.com/iinm/bash-ci.git .; \
-    git checkout 33d8d68aab427cc5b7f5e45fd5835a458ef99060; \
-    rm -rf .git .gitignore .github; \
     mkdir -p $HOOKS_DIR; \
     mkdir -p $LOGS_DIR;
+COPY \
+    bash-ci/git.bash \
+    bash-ci/github.bash \
+    bash-ci/gitlab.bash \
+    bash-ci/slack.bash \
+    bash-ci/with_dockerfile \
+    bash-ci/with_github_checks \
+    bash-ci/with_github_pr_comment \
+    bash-ci/with_gitlab_mr_comment \
+    bash-ci/with_gitlab_pipeline \
+    bash-ci/with_slack_message \
+    $BASH_CI_DIR/
 
 # Server setup
 COPY bash-ci-server.sh /
