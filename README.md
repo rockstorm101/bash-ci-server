@@ -1,4 +1,5 @@
 # Bash CI Server
+![Version][b3]
 [![Test Build Status][b1]][bl]
 [![Docker Image Size][b2]][bl]
 
@@ -219,6 +220,7 @@ relevant licenses for all software contained within.
 [7]: https://github.com/rockstorm101/bash-ci-server/blob/master/LICENSE
 
 
+[b3]: https://img.shields.io/github/v/release/rockstorm101/bash-ci-server?include_prereleases&label=version
 [b1]: https://img.shields.io/github/actions/workflow/status/rockstorm101/bash-ci-server/test-build.yml?branch=master
-[b2]: https://img.shields.io/docker/image-size/rockstorm/bash-ci-server/latest
+[b2]: https://img.shields.io/docker/image-size/rockstorm/bash-ci-server?logo=docker
 [bl]: https://hub.docker.com/r/rockstorm/bash-ci-server
