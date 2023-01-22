@@ -145,7 +145,7 @@ services:
     # git server configuration
 
   bash-ci:
-    image: rockstorm/bash-ci
+    image: rockstorm/bash-ci-server
 
     environment:
       # Must match the locations defined below
@@ -220,5 +220,5 @@ relevant licenses for all software contained within.
 
 
 [b1]: https://img.shields.io/github/actions/workflow/status/rockstorm101/bash-ci-server/test-build.yml?branch=master
-[b2]: https://img.shields.io/docker/image-size/rockstorm/bash-ci/latest
-[bl]: https://hub.docker.com/r/rockstorm/bash-ci
+[b2]: https://img.shields.io/docker/image-size/rockstorm/bash-ci-server/latest
+[bl]: https://hub.docker.com/r/rockstorm/bash-ci-server

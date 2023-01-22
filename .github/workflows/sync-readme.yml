@@ -20,6 +20,6 @@ jobs:
       with:
         username: 'rockstorm'
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-        repository: rockstorm/bash-ci
+        repository: rockstorm/bash-ci-server
         readme-filepath: ./README.md
         short-description: ${{ github.event.repository.description }}
