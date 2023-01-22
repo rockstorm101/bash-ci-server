@@ -8,7 +8,7 @@ This is simply the combination of the [Bash CI scripts][1] by Shumpei
 Iinuma and an [Ncat server][2]. Together they are able to serve as a
 lightweight CI server for other services such as a git server.
 
-Image source at: https://github.com/rockstorm101/bash-ci-docker
+Image source at: https://github.com/rockstorm101/bash-ci-server
 
 [1]: https://github.com/iinm/bash-ci
 [2]: https://nmap.org/ncat/guide/index.html
@@ -220,5 +220,5 @@ relevant licenses for all software contained within.
 
 
 [b1]: https://img.shields.io/github/actions/workflow/status/rockstorm101/bash-ci-server/test-build.yml?branch=master
-[bl]: https://hub.docker.com/r/rockstorm/bash-ci-server
-[b2]: https://img.shields.io/docker/image-size/rockstorm/bash-ci-server/latest
+[b2]: https://img.shields.io/docker/image-size/rockstorm/bash-ci/latest
+[bl]: https://hub.docker.com/r/rockstorm/bash-ci
