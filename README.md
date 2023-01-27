@@ -43,7 +43,7 @@ bash ${BASH_CI_DIR}/with_dockerfile --verbose \
      --task-id 'deploy' \
      sh -c 'build ...'
 
-rsync build repote-ip:/deploy
+rsync build remote-ip:/deploy
 ```
 
 The action script is guaranteed to run at the root of your repository
@@ -197,15 +197,16 @@ This image uses the stable Alpine image.
  * [git-server][5]: A lightweight, simple to configure git server
    over SSH.
  * [gitweb][6]: A lightweight git repositories server over HTTP.
-
+ * If you need something more elaborated, have a look at [Woodpecker
+   CI][7].
 
 [5]: https://github.com/rockstorm101/git-server-docker
-[6]: https://github.com/rockstorm101/bash-ci-server
-
+[6]: https://github.com/rockstorm101/gitweb-docker
+[7]: https://woodpecker-ci.org/
 
 ## License
 
-View [license information][7] for the software contained in this
+View [license information][8] for the software contained in this
 image.
 
 As with all Docker images, these likely also contain other software
@@ -217,7 +218,7 @@ As for any pre-built image usage, it is the image user's
 responsibility to ensure that any use of this image complies with any
 relevant licenses for all software contained within.
 
-[7]: https://github.com/rockstorm101/bash-ci-server/blob/master/LICENSE
+[8]: https://github.com/rockstorm101/bash-ci-server/blob/master/LICENSE
 
 
 [b3]: https://img.shields.io/github/v/release/rockstorm101/bash-ci-server?include_prereleases&label=version
