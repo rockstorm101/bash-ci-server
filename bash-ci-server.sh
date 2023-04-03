@@ -48,8 +48,8 @@ generate_job() {
     rm -rf .git .gitignore
 
     if ! echo -e "${sha}\t${ref}" | \
-			   bash "${BASH_CI_DIR}"/git.bash hook_push \
-					--logdir "$log_dir" --hooks "$hooks_file"; then
+            bash "${BASH_CI_DIR}"/git.bash hook_push \
+                 --logdir "$log_dir" --hooks "$hooks_file"; then
         exit_status=1
         return 0
 	fi
