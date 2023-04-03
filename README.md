@@ -67,10 +67,11 @@ and the relevant `hooks.ltsv` file for this repository shall be within
 it.
 
 Following on with the example, the CI server would have a file
-`/srv/bash-ci/hooks/repository.git/hooks.ltsv` like:
+`/srv/bash-ci/hooks/repository.git/hooks.ltsv` like (note there should
+be tabs between each field):
 
 ```
-hook_id:deploy  refs_pattern:master cmd:bash .actions/deploy.sh
+hook_id:deploy    refs_pattern:master    cmd:bash .actions/deploy.sh
 ```
 
 From [iinm's][3]:
