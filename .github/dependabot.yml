@@ -1,0 +1,13 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"  # location of `.github/workflows`
+    schedule:
+      interval: "weekly"
+      day: "thursday"
+
+  - package-ecosystem: "docker"
+    directory: "/"  # location of `Dockerfile`
+    schedule:
+      interval: "weekly"
+      day: "thursday"
