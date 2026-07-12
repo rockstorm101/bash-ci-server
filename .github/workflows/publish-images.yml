@@ -16,7 +16,7 @@ jobs:
 
     - name: Set Metadata
       id: meta
-      uses: docker/metadata-action@v5
+      uses: docker/metadata-action@v6
       with:
         images: rockstorm/bash-ci-server
         tags: |
